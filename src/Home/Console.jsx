@@ -25,6 +25,7 @@ export default function Console({ bill, handleVoid }) {
     setCash(newCash);
     handleVoid();
     setPayment({ cash: 0, member: "" });
+    setDiscount(0);
   };
 
   const handleSelectDiscount = (id) => {
