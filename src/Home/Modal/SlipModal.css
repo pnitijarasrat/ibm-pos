@@ -1,0 +1,11 @@
+.slip {
+  padding: 32px;
+  background-color: white;
+  margin: 16px 0;
+}
+
+.slip div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

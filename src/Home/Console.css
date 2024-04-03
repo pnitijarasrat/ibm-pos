@@ -1,0 +1,33 @@
+.console {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 16px;
+  min-width: calc(50% - 32px);
+}
+
+.console-bill-list {
+  line-height: 2em;
+}
+
+.console-bill-list div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.console-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.console button {
+  font-size: 1.5em;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.console button:last-child {
+  background-color: green;
+  color: white;
+}

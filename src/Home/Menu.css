@@ -1,0 +1,57 @@
+.menu {
+  margin-left: 16px;
+  margin-bottom: 32px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.menu-item button {
+  padding: 32px;
+  font-size: 2em;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.product h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.product-view {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 16px;
+  align-items: center;
+}
+
+.product-view button {
+  font-size: 3em;
+  padding: 32px;
+}
+
+.product-view div {
+  font-size: 3em;
+}
+
+.product-action {
+  margin: 0 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.product-action button {
+  width: 100%;
+  padding: 16px;
+  font-size: 2em;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.product-action button:first-child {
+  background-color: blue;
+  color: white;
+}
