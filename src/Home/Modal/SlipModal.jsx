@@ -88,7 +88,7 @@ export default function SlipModal({
       <button
         style={{ width: "100%", marginBottom: "16px" }}
         onClick={() => {
-          handleSave(cash - (payment.cash - total + discount));
+          handleSave(cash + total - discount);
           handleClose();
         }}
       >

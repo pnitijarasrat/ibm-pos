@@ -13,11 +13,11 @@ export default function DiscoundModal({ handleClose, handleSelectDiscount }) {
       id: 2,
     },
     {
-      name: "MIN 500 DIS 20% MAX 200",
+      name: "MIN 500 DIS 15% MAX 150",
       id: 3,
     },
     {
-      name: "MIN 1000 DIS 30% MAX 500",
+      name: "MIN 1000 DIS 20% MAX 300",
       id: 4,
     },
   ];

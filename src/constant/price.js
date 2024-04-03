@@ -1,12 +1,12 @@
 export const price = (id) => {
   switch (id) {
     case "productA":
-      return 100;
+      return 820;
     case "productB":
-      return 200;
+      return 690;
     case "productC":
-      return 300;
+      return 420;
     case "productD":
-      return 400;
+      return 229;
   }
 };

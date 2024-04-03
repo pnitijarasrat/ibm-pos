@@ -40,12 +40,12 @@ export default function Console({ bill, handleVoid }) {
         else return setDiscount(100);
       case 3:
         if (total < 500) return;
-        if (total * 0.2 <= 200) return setDiscount(total * 0.2);
-        else return setDiscount(200);
+        if (total * 0.15 <= 150) return setDiscount(total * 0.15);
+        else return setDiscount(150);
       case 4:
         if (total < 1000) return;
-        if (total * 0.3 <= 500) return setDiscount(total * 0.3);
-        else return setDiscount(500);
+        if (total * 0.2 <= 300) return setDiscount(total * 0.2);
+        else return setDiscount(300);
     }
   };
 
