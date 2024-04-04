@@ -18,6 +18,15 @@ export default function SlipModal({
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  const handleCalculation = () => {
+    const pay = parseInt(payment.cash);
+    const totalPrice = parseInt(total) - parseInt(discount.discount);
+    const exchange = pay - totalPrice;
+    if (exchange > 0) return handleSave(parseInt(cash) + pay - exchange);
+    if (exchange < 0) return handleSave(parseInt(cash) + pay);
+    else return;
+  };
+
   return (
     <Modal handleClose={handleClose}>
       <h1>Slip</h1>
@@ -25,8 +34,12 @@ export default function SlipModal({
         <h2>IBM&CO Local Store</h2>
         <br />
         <div>
-          <span>Order</span>
+          <span>Order:</span>
           <span>{generateTransactionId()}</span>
+        </div>
+        <div>
+          <span>Promotion:</span>
+          <span>{discount.id}</span>
         </div>
         <div>
           <span>Sold To:</span>
@@ -69,11 +82,11 @@ export default function SlipModal({
         </div>
         <div>
           <span>Discount:</span>
-          <span>({discount})</span>
+          <span>({discount.discount})</span>
         </div>
         <div>
           <h3>Total:</h3>
-          <h3>{total - discount}</h3>
+          <h3>{total - discount.discount}</h3>
         </div>
         <br />
         <div>
@@ -82,13 +95,13 @@ export default function SlipModal({
         </div>
         <div>
           <span>Exchange:</span>
-          <span>{payment.cash - total + discount}</span>
+          <span>{payment.cash - total + discount.discount}</span>
         </div>
       </div>
       <button
         style={{ width: "100%", marginBottom: "16px" }}
         onClick={() => {
-          handleSave(cash + total - discount);
+          handleCalculation();
           handleClose();
         }}
       >
